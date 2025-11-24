@@ -1,0 +1,18 @@
+// Step 1: Declare a global variable
+let age = 25; // global execution context
+
+// Step 2: Function to display the age
+function displayAge() {
+    console.log("Age is:", age);
+}
+
+// Step 3: Function to change the age
+function changeAge(newAge) {
+    age = newAge; // modifies global variable
+    console.log("Age updated to:", age);
+}
+
+// Step 4: Calling the functions
+displayAge();   // Prints: Age is: 25
+changeAge(30);  // Updates and prints: Age updated to: 30
+displayAge();   // Prints: Age is: 30
